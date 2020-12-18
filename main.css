@@ -1,7 +1,40 @@
 #categories{
-    border: 1px solid red;
+    border: 2px solid red;
 }
 
 #ingredients {
-    border: 1px solid green;
+    border: 2px solid green;
 }
+
+#gallery {
+    border: 2px solid skyblue;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+#counter {
+    border: 2px solid red;
+}
+
+.task5 {
+    border: 2px solid green;
+}
+.task6 {
+    border: 2px solid skyblue;
+
+}
+.task7 {
+    border: 2px solid red;
+}
+}
+#validation-input {
+    border: 3px solid #bdbdbd;
+  }
+  
+  #validation-input-valid {
+    border: 3px solid #4caf50;
+  }
+  
+  #validation-input-invalid {
+    border: 3px solid #f44336;
+  }

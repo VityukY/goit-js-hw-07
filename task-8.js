@@ -8,6 +8,7 @@ const inputNumberRef = controlsAreaRef.firstElementChild;
 cleanButtonRef.addEventListener('click', cleanHendler)
 
 renderRef.addEventListener('click', () => {
+    cleanHendler ();
     const boxArray = [];
     let valueOrderdBox = Number(inputNumberRef.value)  
     while (valueOrderdBox > 0){
@@ -15,6 +16,7 @@ renderRef.addEventListener('click', () => {
         valueOrderdBox-=1;
     }
     boxCobteinerRef.append(...boxArray);
+    inputNumberRef.value = '';
 })
 
 function newBoxHandler(restBoxes,orderedBoxes) {

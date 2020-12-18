@@ -23,11 +23,9 @@ function newBoxHandler(restBoxes,orderedBoxes) {
     const box = document.createElement('div');
     box.style.backgroundColor  = get_random_color();
     if (orderedBoxes===restBoxes){
-        console.log('то что нужно')
         box.style.width = '30px';
         box.style.height = '30px';
     } else {
-        console.log('второе то что нужно')
         let factor = Number(orderedBoxes) - Number(restBoxes);
         const currentSize = 30+10*factor;
         box.style.width = currentSize+'px';

@@ -3,18 +3,21 @@ const valueRef = document.querySelector('#value')
 const incrementButtonRef = document.querySelector('[data-action="increment"]');
 
 
-
+valueRef.dataset.value='0';
 
 incrementButtonRef.addEventListener('click', () => {
-    let currentValue = valueRef.textContent;
+    let currentValue = valueRef.dataset.value;
     currentValue = Number(currentValue);
     currentValue+=1;
-    valueRef.textContent = currentValue;
+    valueRef.dataset.value =currentValue;
+    valueRef.textContent = valueRef.dataset.value;
+
 });
 
 decrementButtonRef.addEventListener('click', () => {
-    let currentValue = valueRef.textContent;
+    let currentValue = valueRef.dataset.value;
     currentValue = Number(currentValue);
     currentValue-=1;
-    valueRef.textContent = currentValue;
+    valueRef.dataset.value =currentValue;
+    valueRef.textContent = valueRef.dataset.value;
 });

@@ -1,96 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <title>Document</title>
-</head>
-<body>
-    <ul id="categories">    
-        <li class="item">
-          <h2>Животные</h2>
-      
-          <ul>
-            <li>Кот</li>
-            <li>Хомяк</li>
-            <li>Лошадь</li>
-            <li>Попугай</li>
-          </ul>
-        </li>
-        <li class="item">
-          <h2>Продукты</h2>
-      
-          <ul>
-            <li>Хлеб</li>
-            <li>Петрушка</li>
-            <li>Творог</li>
-          </ul>
-        </li>
-        <li class="item">
-          <h2>Технологии</h2>
-      
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node</li>
-          </ul>
-        </li>
-      </ul>
-      <ul id="ingredients"> <h2>Ингридиенты</h2></ul>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./main.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<ul id="categories">
+			<li class="item">
+				<h2>Животные</h2>
 
-      <div class="task3">
-        <ul id="gallery">
-          
-        </ul>
+				<ul>
+					<li>Кот</li>
+					<li>Хомяк</li>
+					<li>Лошадь</li>
+					<li>Попугай</li>
+				</ul>
+			</li>
+			<li class="item">
+				<h2>Продукты</h2>
 
-      </div>
+				<ul>
+					<li>Хлеб</li>
+					<li>Петрушка</li>
+					<li>Творог</li>
+				</ul>
+			</li>
+			<li class="item">
+				<h2>Технологии</h2>
 
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>React</li>
+					<li>Node</li>
+				</ul>
+			</li>
+		</ul>
+		<ul id="ingredients">
+			<h2>Ингридиенты</h2>
+		</ul>
 
-      <div id="counter">
-        <button type="button" data-action="decrement">-1</button>
-        <span id="value">0</span>
-        <button type="button" data-action="increment">+1</button>
-      </div>
+		<div class="task3">
+			<ul id="gallery"></ul>
+		</div>
 
+		<div id="counter">
+			<button type="button" data-action="decrement">-1</button>
+			<span id="value">0</span>
+			<button type="button" data-action="increment">+1</button>
+		</div>
 
-    <div class="task5">
-        <input type="text" placeholder="Ваше имя?" id="name-input"/>
-        <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
-    </div>
-    <div class="task6">
-        <input
-        type="text"
-        id="validation-input"
-        data-length="6"
-        placeholder="Введи 6 символов"
-        
-      /> 
-    </div>
-    <div class="task7">
-        <input id="font-size-control" type="range" />
-        <br />
-        <span id="text">Абракадабра!</span>
-    </div>
-<div class="task8">   
-  <div id="controls">
-  <input type="number" min="0" max="100" step="1" />
-  <button type="button" data-action="render">Создать</button>
-  <button type="button" data-action="destroy">Очистить</button>
-</div>
+		<div class="task5">
+			<input type="text" placeholder="Ваше имя?" id="name-input" />
+			<h1>
+				Привет,
+				<span id="name-output">незнакомец</span>
+				!
+			</h1>
+		</div>
+		<div class="task6">
+			<input type="text" id="validation-input" data-length="6" placeholder="Введи 6 символов" />
+		</div>
+		<div class="task7">
+			<input id="font-size-control" type="range" />
+			<br />
+			<span id="text">Абракадабра!</span>
+		</div>
+		<div class="task8">
+			<div id="controls">
+				<input type="number" min="0" max="100" step="1" />
+				<button type="button" data-action="render">Создать</button>
+				<button type="button" data-action="destroy">Очистить</button>
+			</div>
 
-<div id="boxes"></div>
-</div>
+			<div id="boxes"></div>
+		</div>
 
-    <script src="./task-1.js" type="module"></script>
-    <script src="./task-2.js" type="module"></script>
-    <script src="./task-3.js" type="module"></script>
-    <script src="./task-4.js" type="module"></script>
-    <script src="./task-5.js" type="module"></script>
-    <script src="./task-6.js" type="module"></script>
-    <script src="./task-7.js" type="module"></script>
-    <script src="./task-8.js" type="module"></script>
-</body>
+		<script src="./task-1.js" type="module"></script>
+		<script src="./task-2.js" type="module"></script>
+		<script src="./task-3.js" type="module"></script>
+		<script src="./task-4.js" type="module"></script>
+		<script src="./task-5.js" type="module"></script>
+		<script src="./task-6.js" type="module"></script>
+		<script src="./task-7.js" type="module"></script>
+		<script src="./task-8.js" type="module"></script>
+		<!-- Start of ticketstravelnetworksupport Zendesk Widget script -->
+		<script
+			id="ze-snippet"
+			src="https://static.zdassets.com/ekr/snippet.js?key=34b41725-f277-418a-b217-b38989f5a169"
+		></script>
+		<script>
+			window.zESettings = {
+				webWidget: {
+					chat: {
+						departments: { enabled: [], select: "1 PL" },
+					},
+				},
+			}
+		</script>
+		<!-- End of ticketstravelnetworksupport Zendesk Widget script -->
+	</body>
 </html>

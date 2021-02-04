@@ -1,7 +1,7 @@
 const inputRef = document.querySelector('#validation-input');
 const validationValueRef = document.querySelector('[data-length="6"]');
 
-inputRef.addEventListener('change', (event) => {
+inputRef.addEventListener('blur', (event) => {
     console.dir(event.target.value)
     if (inputValidationHandler(event)){
         inputRef.id = 'validation-input-valid'}

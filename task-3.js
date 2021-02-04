@@ -19,20 +19,4 @@ const images = [
   const galleryRef = document.querySelector('#gallery');
   galleryRef.style.display = 'flex';
 
-  const createGalleryItem = (item) => {
-    const itemGalleryRef = document.createElement('li');
-    const imgGalleryRef = document.createElement('img');
-    imgGalleryRef.setAttribute('src', item.url);
-    imgGalleryRef.setAttribute('height', 250)
-    imgGalleryRef.setAttribute = item.alt;
-    itemGalleryRef.appendChild(imgGalleryRef);
-    return itemGalleryRef;
-
-  }
-
-  const newGalleryItems = images.map (item => createGalleryItem(item));
-
-  galleryRef.append(...newGalleryItems);
-
-
-
+images.forEach(item =>galleryRef.insertAdjacentHTML("beforeend",`<li><img src="${item.url}" alt="${item.alt}" height="250"></li>`))

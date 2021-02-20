@@ -1,23 +1,23 @@
-const decrementButtonRef = document.querySelector('[data-action="decrement"]');
-const valueRef = document.querySelector('#value')
-const incrementButtonRef = document.querySelector('[data-action="increment"]');
+const value = document.querySelector("#value")
+const decrementBtn = document.querySelector('button[data-action="decrement"]')
+const incrementBtn = document.querySelector('button[data-action="increment"]')
+const refreshBtn = document.querySelector('button[data-action="refresh"]')
+refreshBtn.addEventListener("click", refresh)
+decrementBtn.addEventListener("click", decrement)
+incrementBtn.addEventListener("click", increment)
 
+let counterValue = 0
+function increment() {
+	counterValue += 1
+	value.textContent = counterValue
+}
 
-valueRef.dataset.value='0';
+function decrement() {
+	counterValue -= 1
+	value.textContent = counterValue
+}
 
-incrementButtonRef.addEventListener('click', () => {
-    let currentValue = valueRef.dataset.value;
-    currentValue = Number(currentValue);
-    currentValue+=1;
-    valueRef.dataset.value =currentValue;
-    valueRef.textContent = valueRef.dataset.value;
-
-});
-
-decrementButtonRef.addEventListener('click', () => {
-    let currentValue = valueRef.dataset.value;
-    currentValue = Number(currentValue);
-    currentValue-=1;
-    valueRef.dataset.value =currentValue;
-    valueRef.textContent = valueRef.dataset.value;
-});
+function refresh() {
+	counterValue = 0
+	value.textContent = counterValue
+}

@@ -46,4 +46,3 @@ function get_random_color() {
 	}
 	return "#" + color
 }
-console.dir(boxCobteinerRef)

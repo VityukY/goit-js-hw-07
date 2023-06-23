@@ -88,6 +88,7 @@
 		<script src="./task-6.js" type="module"></script>
 		<script src="./task-7.js" type="module"></script>
 		<script src="./task-8.js" type="module"></script>
+
 		<!-- Start of ticketstravelnetworksupport Zendesk Widget script -->
 		<script
 			id="ze-snippet"
@@ -97,7 +98,32 @@
 			window.zESettings = {
 				webWidget: {
 					chat: {
-						departments: { enabled: [], select: "1 PL" },
+						title: {
+							"*": "Contact form", // після розгорнення то шапка
+							fr: "Formulaire de contact",
+						},
+						departments: { enabled: [], select: "Test" }, //тут визначається департамент
+						prechatForm: {
+							greeting: {
+								"*": "Please fill out the form below to contact with us", //це текст який світиться після відкриття під шапкою
+								fr: "S'il vous plaît remplir le formulaire ci-dessous pour discuter avec nous",
+							},
+						},
+					},
+					launcher: {
+						chatLabel: {
+							"*": "Hello!",
+							fr: "Bonjour",
+						},
+					},
+					color: {
+						theme: "#FF69B4",
+						launcher: "#a83232", // This will also update the badge
+						launcherText: "#E589B7",
+						button: "#8A0648",
+						resultLists: "#691840",
+						header: "#203D9D",
+						articleLinks: "#FF4500",
 					},
 				},
 			}
